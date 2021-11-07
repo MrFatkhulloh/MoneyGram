@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/css_bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/main.css">
     <title>Template</title>
 </head>
 <body>
+    
+    
+
+    <div class="container mt-4">
+        <form class="row g-3" id="currencyForm" action="https://echo.htmlacademy.ru/">
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Amount of money you have</label>
+              <input type="number" class="form-control" id="inputCity" name="has_money">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Currency</label>
+              <select id="inputState" class="form-select" name="currency">
+                  <option selected disabled hidden value="null">Choose currency type</option>
+                  <option value="eur">EURO €</option>
+                  <option value="usd">Dollar $</option>
+                    <option value="ru">Рубль ₽</option>
+              </select>
+            </div>
+            <div class="input-group mb-3" style="width: 30%; !important">
+                <span class="input-group-text" id="inputGroup-sizing-default">Result</span>
+                <input type="text" class="form-control" id="result" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="result" disabled>
+              </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" name="do_IT">Calculate</button>
+            </div>
+          </form>
+    </div>
 
 
     <script src="./JS/main.js"></script>
